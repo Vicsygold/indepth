@@ -1,0 +1,195 @@
+:root {
+    --dark: #000;
+    --white: #fff;
+    --green: rgb(35, 145, 82);
+    --font: 'Clash Display', sans-serif;
+    --semi-dark: rgb(239, 241, 247);
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+nav {
+    background: var(--dark);
+}
+
+header {
+    height: 100vh;
+    background: var(--dark);
+    font-family: var(--font);
+}
+
+.container {
+    height: 80%;
+}
+
+.text {
+    color: var(--white);
+    font-weight: 800;
+    width: 50%;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+}
+
+.links a {
+    background-color: var(--green);
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: underline;
+    border: var(--white) 3px ridge;
+    background: none;
+}
+
+.text p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.text span {
+    color: var(--green);
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    font-family: var(--font);
+    padding: 4rem;
+}
+
+main section h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+main section p {
+    font-size: 1.5rem;
+}
+
+main #payment {
+    background: var(--dark);
+    color: var(--white);
+    height: 100vh;
+    border-radius: 3rem;
+}
+
+#payment .image-payment,
+#payment .text-payment {
+    width: 49%;
+}
+
+#payment .text-payment h2 {
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+#payment .text-payment p {
+    font-size: 1.5rem;
+}
+
+#payment .text-payment img {
+    background: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#payment .image-payment img {
+    max-width: 55%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#payment .text-payment a {
+    background-color: var(--green);
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#payment .text-payment a:hover {
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: underline;
+    border: var(--white) 3px ridge;
+    background: none;
+}
+
+
+
+.section-extra .extra-box {
+    padding: 3rem;
+    width: 45%;
+    background: var(--semi-dark);
+    border-radius: 3rem;
+    color: var(--dark);
+}
+
+/* footer */
+.footer {
+    padding: 2rem 0;
+    font-family: var(--font);
+     background: var(--dark);
+    color: var(--white);
+}
+
+.footer h5 {
+    margin-bottom: 1rem;
+}
+  
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .fab {
+    font-size: 1.5rem;
+    padding-right: 0.8rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
